@@ -1,0 +1,106 @@
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  @media (max-width: 880px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.section-space {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.text-white {
+  color: $gray-200;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.d-block {
+  display: block;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-sm {
+  padding: 6px 20px;
+  font-size: $base * 0.875;
+}
+
+.btn-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: $base;
+}
+
+.btn-primary {
+  background: $primary;
+  color: $white;
+}
+
+.btn-secondary {
+  background: $secondary;
+  color: $white;
+}
+
+.btn-outline-secondary {
+  border: solid 2px $secondary;
+  color: $secondary;
+  &:hover {
+    background: $secondary;
+    color: $white;
+  }
+}
+
+.btn-dark {
+  background: rgba(0, 0, 0, 0.35);
+  color: $white;
+}

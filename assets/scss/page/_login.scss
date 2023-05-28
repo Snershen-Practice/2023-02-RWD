@@ -1,0 +1,16 @@
+.login {
+  background: $gray-200;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  &-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    &-link {
+      width: 48%;
+    }
+  }
+}

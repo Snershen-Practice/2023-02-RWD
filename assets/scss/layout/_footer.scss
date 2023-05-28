@@ -1,0 +1,65 @@
+.footer {
+  background: $gray-200;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+      align-items: end;
+    }
+  }
+  &-title {
+    font-size: $base * 1.5;
+    margin-bottom: 16px;
+  }
+  &-desc {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &-item {
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+      &:nth-child(1) {
+        margin-right: 20px;
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  &-logo {
+    margin-bottom: 22px;
+    height: 60px;
+    width: auto;
+    @include mobile {
+      height: 49px;
+    }
+  }
+  &-link {
+    display: flex;
+    justify-content: flex-end;
+    li + li {
+      margin-left: 12px;
+    }
+  }
+
+  .fa-brands {
+    font-size: $base * 2;
+  }
+  .fa-square {
+    &-google-plus {
+      color: #db4437;
+    }
+    &-facebook {
+      color: #3a5795;
+    }
+    &-twitter {
+      color: #41abe1;
+    }
+  }
+}

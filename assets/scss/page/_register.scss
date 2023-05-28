@@ -1,0 +1,38 @@
+.register {
+  background: $gray-200;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  &-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  &-outer {
+    display: flex;
+    justify-content: space-between;
+    @include pad {
+      flex-direction: column;
+    }
+  }
+  &-inner {
+    width: 49%;
+    @include pad {
+      width: 100%;
+    }
+  }
+  &-disc {
+    width: 49%;
+    @include pad {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  .form-footer {
+    text-align: right;
+    &-link {
+      width: 50%;
+      @include pad {
+        width: 100%;
+      }
+    }
+  }
+}
